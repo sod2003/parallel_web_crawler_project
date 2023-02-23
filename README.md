@@ -436,4 +436,3 @@ Make sure you have completed all the rubric items [here](https://review.udacity.
 ## Submit your Project
 
 You can submit your project by uploading a zip file or selecting your GitHub repo on the Udacity website.
-# parallel_web_crawler_project
