@@ -1,7 +1,5 @@
 package com.udacity.webcrawler.json;
 
-import java.io.IOException;
-import java.io.Reader;
 import java.time.Duration;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -11,9 +9,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.exc.StreamReadException;
-import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 /**
