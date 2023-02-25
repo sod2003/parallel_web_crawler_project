@@ -1,26 +1,20 @@
 package com.udacity.webcrawler;
 
 import com.udacity.webcrawler.json.CrawlResult;
-import com.udacity.webcrawler.parser.PageParser;
 import com.udacity.webcrawler.parser.PageParserFactory;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.concurrent.ForkJoinPool;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * A concrete implementation of {@link WebCrawler} that runs multiple threads on a

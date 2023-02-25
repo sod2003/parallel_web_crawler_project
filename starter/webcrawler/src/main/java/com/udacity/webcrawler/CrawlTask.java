@@ -1,7 +1,6 @@
 package com.udacity.webcrawler;
 
 import java.time.Clock;
-import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +12,7 @@ import java.util.regex.Pattern;
 import com.udacity.webcrawler.parser.PageParser;
 import com.udacity.webcrawler.parser.PageParserFactory;
 
+@SuppressWarnings("serial")
 public class CrawlTask extends RecursiveAction {
 	private final Clock clock;
 	private final Instant deadline;
