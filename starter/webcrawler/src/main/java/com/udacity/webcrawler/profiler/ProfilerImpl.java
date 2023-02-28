@@ -43,11 +43,11 @@ final class ProfilerImpl implements Profiler {
         throw new IllegalArgumentException("Profiled Annotation is missing");
     }
     
-    T proxy = (T) Proxy.newProxyInstance(
+    Object proxy = Proxy.newProxyInstance(
                 klass.getClassLoader(),
                 new Class<?>[] {klass},
                 new ProfilingMethodInterceptor(delegate, clock, state));
-    return proxy;
+    return (T) proxy;
   }
 
   @Override
